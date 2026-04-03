@@ -1,5 +1,3 @@
-# ArchiAssemblyProjectCalculator
-Assembly-Based Numeric Processing System (x86 / MASM)
 # ⚙️ Low-Level Numeric Processing System (x86 Assembly)
 
 A low-level system developed in x86 Assembly (MASM) to process numeric input, perform arithmetic operations, and visualize processor behavior through register flags.
@@ -45,3 +43,50 @@ The program provides a menu-driven interface allowing the user to:
 6. Display processor flags (PSW) after each operation
 
 Example execution:
+
+
+NB1 + NB2 = RESULT
+[FLAGS DISPLAYED IN BINARY]
+
+
+---
+
+## ⚙️ Technologies
+
+- x86 Assembly (MASM / TASM compatible)
+- DOS Interrupts (INT 21H, INT 10H)
+- Low-level memory and register manipulation
+
+---
+
+## ▶️ How to Run
+
+### 1. Assemble the program
+```bash
+masm projet.asm
+link projet.obj
+2. Run the program (DOS environment / DOSBox recommended)
+projet.exe
+📌 Key Procedures
+LIRE_NOMBRE_DECIMAL → Reads and validates user input
+AFFICHE_NOMBRE_DECIMAL → Displays numbers in decimal
+INIT_TAB → Initializes arrays with user input
+SOMMENB1NB2 → Performs element-wise addition
+AFFICHAGE_FLAGS → Displays processor flags (PSW)
+AX2BIN → Converts register values to binary
+AFFICHE_NOMBRE_HEXA → Displays hexadecimal values
+📁 Project Structure
+DATA segment → variables, arrays, messages
+STACK segment → program stack
+CODE segment → logic and procedures
+🎓 Academic Context
+
+Developed at USTHB (University of Science and Technology Houari Boumediene)
+Module: Computer Architecture (ARCHI 02)
+
+⚠️ Notes
+The feature related to transforming the result array into a LIFO queue was not implemented
+Designed for educational purposes to demonstrate low-level programming concepts
+👨‍💻 Author
+
+Djahid Saidoun
